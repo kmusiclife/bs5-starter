@@ -4,7 +4,7 @@ bs5-starter is a comprehensive starter repository designed to kickstart your dev
 
 [DEMO](https://yuta.kmusiclife.com/demos/bs5-starter/)
 
-# Key Features:
+# Features:
 
 ## [Bootstrap 5](https://github.com/twbs/bootstrap.git)
 The latest version of Bootstrap is included, providing you with a robust set of HTML, CSS, and JavaScript components. Bootstrap makes it easy to create professional-looking designs and responsive layouts across different devices and screen sizes.
@@ -25,7 +25,7 @@ With bs5-starter, you can jumpstart your Bootstrap 5 projects by leveraging a so
 
 # How to use
 ```bash
-git clone 
+git clone https://github.com/kmusiclife/bs5-starter.git
 cd bs5-starter
 mkdir src/vendor
 cd src/vendor
