@@ -20,12 +20,12 @@ With bs5-starter, you can jumpstart your Bootstrap 5 projects by leveraging a so
 
 # How to use
 ```bash
-$ git clone 
-$ cd bs5-starter
-$ cd src/vendor
-$ git clone https://github.com/twbs/bootstrap.git
-$ git clone https://github.com/kapoko/delicious-hamburgers
-$ git clone https://github.com/thomaspark/bootswatch.git
+git clone 
+cd bs5-starter
+cd src/vendor
+git clone https://github.com/twbs/bootstrap.git
+git clone https://github.com/kapoko/delicious-hamburgers
+git clone https://github.com/thomaspark/bootswatch.git
 ```
 
 Afterwards, open VSCode and edit main.scss in livesass. CSS files are compiled into dist/css/main.css as .vscode is also included.
