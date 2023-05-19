@@ -18,3 +18,12 @@ This repository also includes lux.js, a JavaScript library developed by the crea
 
 With bs5-starter, you can jumpstart your Bootstrap 5 projects by leveraging a solid foundation of components, styles, and tools. It allows you to focus more on your unique design and application logic, while providing a reliable and optimized starting point for your development journey.
 
+# How to use
+```bash
+$ git clone 
+$ cd bs5-starter
+$ cd src
+$ git clone https://github.com/twbs/bootstrap.git
+$ git clone https://github.com/kapoko/delicious-hamburgers
+$ git clone https://github.com/thomaspark/bootswatch.git
+```
