@@ -4,7 +4,7 @@ bs5-starter is a comprehensive starter repository designed to kickstart your dev
 
 # Key Features:
 
-# Bootstrap 5: 
+## Bootstrap 5: 
 The latest version of Bootstrap is included, providing you with a robust set of HTML, CSS, and JavaScript components. Bootstrap makes it easy to create professional-looking designs and responsive layouts across different devices and screen sizes.
 
 # delicious-hamburgers: 
