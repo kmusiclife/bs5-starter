@@ -2,7 +2,7 @@
 
 bs5-starter is a comprehensive starter repository designed to kickstart your development process with Bootstrap 5, a popular front-end framework, and delicious-hamburgers, a library for creating animated hamburger menus. This repository serves as a solid foundation for building modern, responsive web applications.
 
-# [DEMO](https://yuta.kmusiclife.com/demos/bs5-starter/)
+[DEMO](https://yuta.kmusiclife.com/demos/bs5-starter/)
 
 # Key Features:
 
