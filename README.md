@@ -6,7 +6,7 @@ bs5-starter is a comprehensive starter repository designed to kickstart your dev
 
 # Key Features:
 
-## [Bootstrap 5](https://github.com/twbs/bootstrap.git){:target="_blank"}: 
+## [Bootstrap 5](https://github.com/twbs/bootstrap.git){:target="_blank"}
 The latest version of Bootstrap is included, providing you with a robust set of HTML, CSS, and JavaScript components. Bootstrap makes it easy to create professional-looking designs and responsive layouts across different devices and screen sizes.
 
 ## [delicious-hamburgers](https://github.com/kapoko/delicious-hamburgers){:target="_blank"}: 
