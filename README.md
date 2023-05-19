@@ -22,7 +22,7 @@ With bs5-starter, you can jumpstart your Bootstrap 5 projects by leveraging a so
 ```bash
 $ git clone 
 $ cd bs5-starter
-$ cd src
+$ cd src/vendor
 $ git clone https://github.com/twbs/bootstrap.git
 $ git clone https://github.com/kapoko/delicious-hamburgers
 $ git clone https://github.com/thomaspark/bootswatch.git
