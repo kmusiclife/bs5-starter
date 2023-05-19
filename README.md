@@ -6,11 +6,14 @@ bs5-starter is a comprehensive starter repository designed to kickstart your dev
 
 # Key Features:
 
-## Bootstrap 5: 
+## [Bootstrap 5](https://github.com/twbs/bootstrap.git): 
 The latest version of Bootstrap is included, providing you with a robust set of HTML, CSS, and JavaScript components. Bootstrap makes it easy to create professional-looking designs and responsive layouts across different devices and screen sizes.
 
-## delicious-hamburgers: 
+## [delicious-hamburgers](https://github.com/kapoko/delicious-hamburgers): 
 The repository includes the clone of delicious-hamburgers, a library that enhances your hamburger menu icon with delightful animations. It adds an extra touch of interactivity to your website's navigation and improves the overall user experience.
+
+## [bootswatch](https://github.com/thomaspark/bootswatch.git):
+Compilation of bootswatch themes: in addition, the bs5-starter is also prepared to easily compile bootswatch themes. bootswatch offers a variety of stylish Bootstrap themes and the bs5- starter makes it easy to switch between and customise themes.
 
 ## SASS Compilation: 
 To streamline your development workflow, bs5-starter enables you to leverage the power of SASS. Simply make your style customizations in SASS files, and the repository includes a pre-configured SASS compiler to automatically generate the corresponding CSS files.
