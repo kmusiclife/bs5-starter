@@ -27,3 +27,5 @@ $ git clone https://github.com/twbs/bootstrap.git
 $ git clone https://github.com/kapoko/delicious-hamburgers
 $ git clone https://github.com/thomaspark/bootswatch.git
 ```
+
+Afterwards, open VSCode and edit main.scss in livesass. CSS files are compiled into dist/css/main.css as .vscode is also included.
