@@ -10,5 +10,7 @@
 @import "../vendor/delicious-hamburgers/scss/base";
 @import "../vendor/delicious-hamburgers/scss/hamburgers.scss";
 
-@import "common";
+// https://github.com/kmusiclife/bs5-content
+@import "../vendor/bs5-content/scss/bs5-content";
 
+@import "common";
