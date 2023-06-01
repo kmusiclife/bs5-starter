@@ -9,7 +9,7 @@
     ],
     "liveSassCompile.settings.includeItems": [
         "**/scss/main.scss",
-        "**/scss/bootswatch-**.scss"
+        "**/scss/bootswatch/**.scss"
     ],
     "liveSassCompile.settings.showOutputWindowOn": "Debug"
 }

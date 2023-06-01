@@ -4,3 +4,4 @@
 .DS_Store
 Thumbs.db
 src/vendor/*
+_customize.scss

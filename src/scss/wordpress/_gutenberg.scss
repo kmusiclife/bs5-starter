@@ -1,0 +1,48 @@
+@mixin gutenberg{
+
+    ul {
+        @extend .list-group;
+    }
+    ul li{
+        @extend .list-group-item;
+    }
+    table {
+        @extend .table;
+    }
+    h2 {
+        font-size: $h2-font-size;
+        font-weight: bold;
+        margin-bottom: $spacer;
+        padding: ($spacer * 1.0) ($spacer * 1.2);
+        background: $primary;
+    }
+    h3 {
+        font-size: $h3-font-size;
+        font-weight: bold;
+        padding: ($spacer * 1.0) ($spacer * 1.2);
+        margin-bottom: $spacer;
+        background: $secondary;
+    }
+    h4 {
+        font-size: $h4-font-size;
+        font-weight: bold;
+        padding: ($spacer * 1.0) ($spacer * 1.2);
+        margin-bottom: $spacer;
+        border-left: 10px solid $gray-500;
+    }
+    h5 {
+        font-size: $h5-font-size;
+        font-weight: bold;
+        padding: ($spacer * 1.0) 0;
+        margin-bottom: $spacer;
+        border-bottom: 3px solid $gray-500;
+    }
+    h6 {
+        font-size: $h6-font-size;
+        font-weight: bold;
+        padding: ($spacer * 1.0) 0;
+        margin-bottom: $spacer;
+        border-bottom: 3px dotted $gray-500;
+    }
+
+}
