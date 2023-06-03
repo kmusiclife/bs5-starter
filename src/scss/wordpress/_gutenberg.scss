@@ -1,14 +1,156 @@
 @mixin gutenberg{
 
+    @include gb-utility;
+    @include gb-head;
+    &.heading1{
+        h2 { @include gb-heading-011($h2-font-size); }
+    }
+    blockquote.wp-block-quote{}
+    .wp-block-code{ code{} }
+    .wp-block-cover{
+        margin-bottom: $paragraph-margin-bottom;
+    }
+    .wp-block-file{
+        margin-bottom: $paragraph-margin-bottom;
+    }
+    .wp-block-media-text{
+        figure{
+            &.wp-block-media-text__media{
+                margin-bottom: $paragraph-margin-bottom;
+                figcaption{ @include gb-figcaption; }
+                img { margin-bottom: $paragraph-margin-bottom; }
+                .wp-block-media-text__content{ margin-bottom: $paragraph-margin-bottom; }
+            }
+        }
+        .wp-block-media-text__content{
+            margin-bottom: $paragraph-margin-bottom;
+        }
+    }
+    .wp-block-buttons{
+        margin-bottom: $paragraph-margin-bottom;
+    }
+    figure{
+        &.wp-block-pullquote{
+            @include gb-figcaption;
+        }
+        &.wp-block-image{
+            figcaption{ @include gb-figcaption; }
+            &.size-large{
+
+            }
+            &.size-medium{
+
+            }
+        }
+        &.wp-block-gallery{
+            figcaption{ @include gb-figcaption; }
+        }
+        &.wp-block-table{
+            figcaption{ @include gb-figcaption; }
+        }
+        &.wp-block-embed{
+            figcaption{ @include gb-figcaption; }
+        }
+        &.wp-block-embed-youtube{
+            &.wp-embed-aspect-1-1.wp-has-aspect-ratio .wp-block-embed__wrapper {
+                @extend .ratio, .ratio-1x1;
+            }
+            &.wp-embed-aspect-4-3.wp-has-aspect-ratio .wp-block-embed__wrapper {
+                @extend .ratio, .ratio-4x3;
+            }
+            &.wp-embed-aspect-16-9.wp-has-aspect-ratio .wp-block-embed__wrapper {
+                @extend .ratio, .ratio-16x9;
+            }
+            &.wp-embed-aspect-21-9.wp-has-aspect-ratio .wp-block-embed__wrapper {
+                @extend .ratio, .ratio-21x9;
+            }
+        }
+    }
+
+}
+@mixin gb-utility{
+
     ul {
-        @extend .list-group;
+
+        padding-left: 0; // reset padding because ul and ol
+        margin-bottom: $paragraph-margin-bottom;;
+        list-style-type: none;
+
+        // https://pote-chil.com/html-maker/list
+        &.list-003{
+            li {
+                display: flex;
+                align-items: center;
+                gap: 0 5px;
+                padding: .3em;
+            }
+            li::before {
+                display: inline-block;
+                width: 1em;
+                height: 1em;
+                background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%232589d0%22%20d%3D%22M8.2%2C20.6l-7.8-7.8c-0.5-0.5-0.5-1.2%2C0-1.7L2%2C9.4c0.5-0.5%2C1.2-0.5%2C1.7%2C0L9%2C14.7L20.3%2C3.4c0.5-0.5%2C1.2-0.5%2C1.7%2C0l1.7%2C1.7%20c0.5%2C0.5%2C0.5%2C1.2%2C0%2C1.7L9.8%2C20.6C9.4%2C21.1%2C8.6%2C21.1%2C8.2%2C20.6L8.2%2C20.6z%22%2F%3E%3C%2Fsvg%3E');
+                content: '';
+            }
+        }
+        &.list-007{
+            li {
+                display: flex;
+                align-items: center;
+                gap: 0 10px;
+                padding: .3em;
+            }
+            li::before {
+                transform: rotate(-45deg);
+                width: .4em;
+                height: .4em;
+                border-bottom: 3px solid $primary;
+                border-right: 3px solid $primary;
+                content: '';
+            }
+        }
+        &.list-012{
+            li {
+                display: flex;
+                align-items: center;
+                gap: 0 10px;
+                position: relative;
+                padding: .3em .3em .3em 1.5em;
+            }
+            li::before,
+            li::after {
+                position: absolute;
+                content: '';
+            }
+            li::before {
+                left: 0;
+                width: 1.2em;
+                height: 1.2em;
+                border-radius: 50%;
+                background-color: $primary;
+            }
+            li::after {
+                left: .6em;
+                transform: translateX(-75%) rotate(-45deg);
+                width: .3em;
+                height: .3em;
+                border-bottom: 2px solid $white;
+                border-right: 2px solid $white;
+            }
+        }
     }
-    ul li{
-        @extend .list-group-item;
-    }
+
     table {
         @extend .table;
     }
+
+}
+@mixin gb-figcaption{
+    text-align: center;
+    opacity: 0.75;
+    font-size: 90%;
+}
+@mixin gb-head{
+
     h2 {
         font-size: $h2-font-size;
         font-weight: bold;
@@ -45,4 +187,66 @@
         border-bottom: 3px dotted $gray-500;
     }
 
+}
+
+@mixin gb-heading-008($font-size){
+    
+    display: inline-block;
+    position: relative;
+    padding: .5em .7em;
+    border-radius: 50px 0 0 50px;
+    background-color: $primary;
+    color: #fff;
+    margin-bottom: $spacer;
+    border: none;
+    padding-left: 38px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: calc(50% - 7px);
+        left: 15px;
+        width: 15px;
+        height: 15px;
+        margin-right: 13px;
+        border-radius: 50%;
+        background: $white;
+    }
+}
+@mixin gb-heading-009($font-size){
+    
+    position: relative;
+    padding: .5em .7em;
+    border-radius: 10px;
+    background-color: $primary;
+    color: $white;
+    margin-bottom: $spacer;
+    border: none;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 30px;
+        width: 0;
+        height: 0;
+        border: 11px solid transparent;
+        border-top: 11px solid $primary;
+    }
+}
+@mixin gb-heading-011($font-size){
+    position: relative;
+    padding: .5em .7em;
+    background-color: $primary;
+    color: $white;
+    border: none;
+
+    &::before {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border-bottom: solid 10px transparent;
+        border-right: solid 20px darken($primary, 20%);
+        content: '';
+    }
 }
