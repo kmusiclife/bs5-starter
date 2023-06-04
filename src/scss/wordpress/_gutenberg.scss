@@ -2,10 +2,21 @@
 
     @include gb-utility;
     @include gb-head;
-    &.heading1{
-        h2 { @include gb-heading-011($h2-font-size); }
+
+    blockquote.wp-block-quote{
+        padding: $paragraph-margin-bottom;
+        border-left: 4px solid $light;
+
+        &:has(cite) {
+            padding-bottom: 0.5rem;
+        }
+        cite {
+            display: block;
+            color: opacify($light, 0.5);
+            font-size: 80%;
+            text-align: right;
+        }
     }
-    blockquote.wp-block-quote{}
     .wp-block-code{ code{} }
     .wp-block-cover{
         margin-bottom: $paragraph-margin-bottom;
@@ -151,6 +162,13 @@
 }
 @mixin gb-head{
 
+    $headers: (
+        "h2" : $h2-font-size, 
+        "h3" : $h3-font-size, 
+        "h4" : $h4-font-size, 
+        "h5" : $h5-font-size, 
+        "h6" : $h6-font-size
+    );
     h2 {
         font-size: $h2-font-size;
         font-weight: bold;
@@ -185,6 +203,17 @@
         padding: ($spacer * 1.0) 0;
         margin-bottom: $spacer;
         border-bottom: 3px dotted $gray-500;
+    }
+    @each $_name, $_size in $headers {
+        #{$_name}.heading1 {
+            @include gb-heading-008($_size);
+        }
+        #{$_name}.heading2 {
+            @include gb-heading-009($_size);
+        }
+        #{$_name}.heading3 {
+            @include gb-heading-011($_size);
+        }
     }
 
 }
